@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors - CareFirst Hospital</title>
+    <style>
+        :root { --primary-teal: #007788; --light-teal: #e6f4f6; --text-dark: #333333; --white: #ffffff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f8f9fa; color: var(--text-dark); }
+        header { background: var(--white); display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo { font-size: 22px; font-weight: bold; color: var(--primary-teal); }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--text-dark); font-weight: 500; }
+        nav a.active { color: var(--primary-teal); }
+        
+        .container { padding: 40px 5%; max-width: 1200px; margin: auto; }
+        h1 { color: var(--primary-teal); margin-bottom: 30px; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--white); padding: 25px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .doc-avatar { width: 90px; height: 90px; background: var(--light-teal); border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 35px; color: var(--primary-teal); }
+        .card h3 { color: var(--primary-teal); margin-bottom: 5px; }
+        .card p { color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CareFirst Hospital</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="departments.html">Departments</a>
+            <a href="doctors.html" class="active">Doctors</a>
+            <a href="form.html">Patient Entry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Meet Our Specialist Doctors</h1>
+        <div class="grid">
+            <div class="card">
+                <div class="doc-avatar">👩‍⚕️</div>
+                <h3>Dr. Ananya Sharma</h3>
+                <p>Chief Medical Officer & Senior Cardiologist</p>
+            </div>
+            <div class="card">
+                <div class="doc-avatar">👨‍⚕️</div>
+                <h3>Dr. Rajesh Verma</h3>
+                <p>Head of Neurology & Brain Surgery</p>
+            </div>
+            <div class="card">
+                <div class="doc-avatar">👩‍⚕️</div>
+                <h3>Dr. Priya Nair</h3>
+                <p>Lead Pediatrician & Child Specialist</p>
+            </div>
+            <div class="card">
+                <div class="doc-avatar">👨‍⚕️</div>
+                <h3>Dr. Vikram Singh</h3>
+                <p>Senior Orthopedic & Joint Surgeon</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
