@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareFirst Private Hospital - Home</title>
+    <style>
+        :root {
+            --primary-teal: #007788;
+            --light-teal: #e6f4f6;
+            --accent-teal: #005566;
+            --text-dark: #333333;
+            --white: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f8f9fa; color: var(--text-dark); }
+        header { background: var(--white); display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 22px; font-weight: bold; color: var(--primary-teal); }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--text-dark); font-weight: 500; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: var(--primary-teal); }
+        
+        .hero { display: flex; align-items: center; justify-content: space-between; padding: 60px 5%; background: linear-gradient(135deg, var(--light-teal) 0%, var(--white) 100%); min-height: 70vh; }
+        .hero-content { max-width: 500px; }
+        .hero-content h1 { color: var(--primary-teal); font-size: 40px; margin-bottom: 20px; }
+        .hero-content p { color: #555; font-size: 16px; margin-bottom: 30px; line-height: 1.6; }
+        .btn { background-color: var(--primary-teal); color: var(--white); padding: 12px 25px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: background 0.3s; }
+        .btn:hover { background-color: var(--accent-teal); }
+        
+        .hero-image { width: 300px; height: 300px; background-color: var(--primary-teal); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,119,136,0.2); position: relative; }
+        .doc-head { width: 120px; height: 150px; background-color: #ffd1b3; border-radius: 60px 60px 50px 50px; position: relative; }
+        .doc-hair { position: absolute; top: 0; width: 100%; height: 70px; background-color: #3b2219; border-radius: 60px 60px 10px 10px; }
+        .doc-smile { position: absolute; bottom: 35px; left: 45px; width: 30px; height: 15px; border-bottom: 4px solid #d9534f; border-radius: 0 0 15px 15px; }
+
+        footer { text-align: center; padding: 20px; background: var(--white); color: #778; font-size: 14px; border-top: 1px solid #eaeaea; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">CareFirst Hospital</div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="departments.html">Departments</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="form.html">Patient Entry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Advanced Healthcare with a Gentle Touch</h1>
+            <p>Welcome to CareFirst Private Hospital. We provide world-class medical facilities, expert physicians, and compassionate care available 24/7 for you and your family.</p>
+            <a href="form.html" class="btn">Proceed to Patient Entry</a>
+        </div>
+        <div class="hero-image">
+            <div class="doc-head">
+                <div class="doc-hair"></div>
+                <div class="doc-smile"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 CareFirst Private Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
